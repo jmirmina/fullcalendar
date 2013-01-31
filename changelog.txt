@@ -1,4 +1,9 @@
 
+version 1.5.4.1 (1/31/13)
+	- events returning false in eventRender now render properly (issue 762, pull request 47)
+	- added disabling of drag/resize for individual events (pull request 49)
+	- added a keepEvents option to the removeEventSource method
+
 version 1.5.4 (9/5/12)
 	- made compatible with jQuery 1.8.* (thx archaeron)
 	- bundled with jQuery 1.8.1 and jQuery UI 1.8.23
