@@ -1,4 +1,7 @@
 
+version 1.5.4.2 (2/11/13)
+	- added a beforeRender and afterRender trigger
+
 version 1.5.4.1 (1/31/13)
 	- events returning false in eventRender now render properly (issue 762, pull request 47)
 	- added disabling of drag/resize for individual events (pull request 49)
