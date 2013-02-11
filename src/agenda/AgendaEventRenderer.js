@@ -55,6 +55,7 @@ function AgendaEventRenderer() {
 	
 
 	function renderEvents(events, modifiedEventId) {
+		trigger('beforeRender');
 		reportEvents(events);
 		var i, len=events.length,
 			dayEvents=[],
@@ -71,6 +72,7 @@ function AgendaEventRenderer() {
 			setHeight(); // no params means set to viewHeight
 		}
 		renderSlotSegs(compileSlotSegs(slotEvents), modifiedEventId);
+		trigger('afterRender');
 	}
 	
 	

@@ -39,8 +39,10 @@ function BasicEventRenderer() {
 	
 	
 	function renderEvents(events, modifiedEventId) {
+		trigger('beforeRender');
 		reportEvents(events);
 		renderDaySegs(compileSegs(events), modifiedEventId);
+		trigger('afterRender');
 	}
 	
 	
