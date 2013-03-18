@@ -42,6 +42,7 @@ function BasicEventRenderer() {
 		trigger('beforeRender');
 		reportEvents(events);
 		renderDaySegs(compileSegs(events), modifiedEventId);
+		trigger('eventAfterAllRender');
 		trigger('afterRender');
 	}
 	
