@@ -22,7 +22,8 @@ function _exclEndDay(end, allDay) {
 
 
 function segCmp(a, b) {
-	return (b.msLength - a.msLength) * 100 + (a.event.start - b.event.start);
+	tempCmp = (b.msLength - a.msLength) * 100 + (a.event.start - b.event.start);
+	return (tempCmp === 0) ? (a.event.id - b.event.id) : tempCmp;
 }
 
 
