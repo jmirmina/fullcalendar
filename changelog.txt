@@ -1,3 +1,5 @@
+version 1.6.1.2 (4/30/13)
+	- Modified the compare function to use the smallest event ID in cases where the event start times were the same
 
 version 1.6.1 (4/14/13)
 	- fixed event inner content overflow bug (issue 1783)
